@@ -1,0 +1,18 @@
+@import '../colors.scss';
+
+.task {
+  text-align: left;
+  padding: 5% 5%;
+
+  &:hover {
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .task-description {
+    color: $secondary-text-color;
+  }
+
+  .task-status {
+    float: right;
+  }
+}

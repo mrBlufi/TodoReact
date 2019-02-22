@@ -1,0 +1,66 @@
+@import '../colors.scss';
+.task-input {
+  padding: 15px;
+  width: min-content;
+  background-color: $panel-color;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+
+  div label {
+    display: block;
+  }
+  .input-core {
+    margin: 15px 20px;
+    label {
+      margin: 5px;
+      font-weight: 600;
+      &:first-letter {
+        text-transform: capitalize;
+      }
+    }
+    input {
+      width: 360px;
+      background: $input-bg-color;
+      color: $input-text-color;
+      font: inherit;
+      box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.3);
+      border: 0;
+      outline: 0;
+      padding: 15px 10px;
+    }
+  }
+
+  .button {
+    text-align: right;
+    margin: 5px 20px;
+    &:first-letter {
+      text-transform: capitalize;
+    }
+    .btn {
+      background: transparent;
+      color: inherit;
+      font: inherit;
+      border: 0;
+      outline: 0;
+      padding: 0;
+      transition: all 200ms ease-in;
+      cursor: pointer;
+
+      &--primary {
+        background: $button-bg-color;
+        color: $button-text-color;
+        box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+        border-radius: 2px;
+        padding: 12px 36px;
+
+        &:hover {
+          background: darken($button-bg-color, 4%);
+        }
+
+        &:active {
+          background: $button-bg-color;
+          box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
+  }
+}
